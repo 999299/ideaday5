@@ -9,4 +9,13 @@ package huaqing.com.day5;
  * @描述
  */
 public class Test {
+    public static void main(String[] args) {
+        BaoZi bz = new BaoZi();
+        BunShop l = new BunShop("钟兴旺", bz);
+
+        Foodie z = new Foodie("龙坊", bz);
+
+        l.start();
+        z.start();
+    }
 }
